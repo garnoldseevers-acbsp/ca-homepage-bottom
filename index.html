@@ -110,6 +110,11 @@
                 </a>
             </li>
             <li class="col-md-2">
+                <a href="www.mycos.com.cn/En" target="_blank" rel="noopener">
+                    <img src="/resource/resmgr/corpmem_carousel/mycsos-logo-web.jpg" alt="MyCOS">
+                </a>
+            </li>
+            <li class="col-md-2">
                 <a href="http://www.peregrineacademics.com/" target="_blank" rel="noopener">
                     <img src="/resource/resmgr/corpmem_carousel/peregrine_double.jpg" alt="Peregrine Academic Services">
                 </a>
@@ -139,27 +144,27 @@
                     <img src="/resource/resmgr/corpmem_carousel/worldstrides.png" alt="Worldstrides">
                 </a>
             </li>
-            <li class="col-md-2">
-                <a href="www.mycos.com.cn/En" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/mycsos-logo-web.jpg" alt="MyCOS">
-                </a>
-            </li>
         </ul>  
     </div>
 </div>
 <script>
     $( document ).ready(function() {
         $('.bxslider').bxSlider({
-            mode: 'fade',
-            ticker: true,
+            mode: 'horizontal',
+            ticker: false,
             tickerHover: true,
+            auto: true,
+            autoHover: true,
             useCSS: false,
             responsive: false,
             slideMargin: 15,
-            minSlides: 1,
-            maxSlides: 100,
-            speed: 95000,
-            randomStart: true
+            minSlides: 3,
+            maxSlides: 3,
+            moveSlides: 3,
+            slideWidth: 100,
+            shrinkItems: true,
+            speed: 1,
+            pause: 3000,
         });
     });
 </script>
