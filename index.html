@@ -3,205 +3,234 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-    .bxslider li {
-        padding: 0px 40px;
-        display: none;
-        height: 50px;
+    .bottomcontentarea-out{
+        box-shadow: none !important;
+        padding-bottom: 50px;
     }
-    .bxslider li.display_slide {
-        display: block;
+    .bottomcontentarea-out .container{
+        max-width: 1100px;
+    }
+    .cor_part_slider {
+        margin-top: 25px;
+        padding: 20px 0px;
+    }
+    .cor_part_slider li {
+        display: none;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+        height: 50px;
+        margin-bottom: 25px;
+
+    }
+    .cor_part_slider li.display_slide {
+        display: inline-block;
+    }
+    .cor_part_slider li a{
+        display: inline-block;
+        text-align: center;
+        padding: 0px 40px;
+        max-width: 100%;
+        max-height: 100% !important;
+    }
+    .cor_part_slider li img{
+        text-align: center;
+        display: inline-block;
+        max-height: 50px;
+    }
+    .clear{
+        clear: both;
+    }
+    #sponsors{
+        border: 1px solid #f5f5f5;
+        box-shadow: 6px 6px 7px -4px #888;
     }
 </style>
-<!--
-<link href="//acbsp.site-ym.com/resource/resmgr/jquery.bxslider.css" type="text/css" rel="stylesheet">
--->
-<div id="sponsors">
-    <div class="slider">
-        <ul class="bxslider">
-            <!-- TEMPLATE FOR EACH IMAGE
-            <li class="col-md-4"><a href="http://www.website.com" target="_blank" rel="noopener"><img src="http://acbsp.site-ym.com/resource/resmgr/Sponsors_Partners/livetext_h55px.jpg" alt="GROUP HERE"></a></li>
-            -->
-            <li class="col-md-4 display_slide">
-                <a href="http://www.aicpa.org/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/AICPA.png" alt="AICPA">
-                </a>
-            </li>
-            <li class="col-md-4 display_slide">
-                <a href="http://www.baldrigepe.org/alliance/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/baldrigeAlliance.png" alt="The Alliance for Performance Excellence">
-                </a>
-            </li>
-            <li class="col-md-4 display_slide">
-                <a href="http://www.businessweek.com/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/BBW.png" alt="Bloomberg Businessweek">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.campuslabs.com/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/CampusLabs.png" alt="Campus Labs">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.capsim.com/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/capsim.png" alt="Capsim">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.carringtoncrisp.com/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/carringtoncrisp.png" alt="CarringtonCrisp">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.cengage.com/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/cengage.png" alt="Cengage Learning">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.ceeman.org/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/ceeman.png" alt="CEEMAN">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://cheainternational.org/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/ciqg.jpg" alt="CHEA International Quality Group">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://management.org.tw/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/chinesemanagementassociation.png" alt="Chinese Management Association">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://eduvantis.com/" target="_blank" rel="noopener" rel="noopener">
-                    <img src="/resource/resmgr/images/eduvantis.jpg" alt="Eduvantis"/>
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.ets.org/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/ETS.png" alt="ETS">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://enactus.org/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/enactus.png" alt="Enactus">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.financialanalyst.org/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/GAFM.jpg" alt="Global Academy of Financial Management International Board of Standards">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.imanet.org/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/IMA.png" alt="Institute of Management Accountants">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="https://www.interpretive.com/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/interpretivesimulations.png" alt="Interpretive Simulations">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://keystoneacademic.com/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/keystone.png" alt="Keystone Academic Solutions">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.cladea.org/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/CLADEA.png" alt="Latin American Council of Management Schools">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="https://www.midstatesgroup.com/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/MidstatesGroup.png" alt="Midstates Group">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="www.mycos.com.cn/En" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/mycsos-logo-web.jpg" alt="MyCOS">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.peregrineacademics.com/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/peregrine_double.jpg" alt="Peregrine Academic Services">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.planningshop.com/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/planningshop.png" alt="PlanningShop">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.pmiteach.org/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/PMI.png" alt="Project Management Institute">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://skyfactor.com/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/skyfactor.png" alt="Skyfactor">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.unprme.org/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/PRME.jpg" alt="PRME - Principles for Responsible Management Education">
-                </a>
-            </li>
-            <li class="col-md-4">
-                <a href="http://www.worldstrides.org/" target="_blank" rel="noopener">
-                    <img src="/resource/resmgr/corpmem_carousel/worldstrides.png" alt="Worldstrides">
-                </a>
-            </li>
-        </ul>  
-    </div>
-</div>
+<div class="container">
+    <div class="row">
+        <div id="sponsors">
+            <div class="slider">
+                <h4 style="text-align: center; padding-top 25px; transform: uppercase;">
+                    Our Corporate Partners
+                </h2>
+                <ul class="cor_part_slider">
+                    <!-- TEMPLATE FOR EACH IMAGE
+                    <li class="col-md-4"><a href="http://www.website.com" target="_blank" rel="noopener"><img src="http://acbsp.site-ym.comhttps://www.acbsp.org/resource/resmgr/Sponsors_Partners/livetext_h55px.jpg" alt="GROUP HERE"></a></li>
+                    -->
+                    <li class="col-lg-6 col-md-12 col-sm-12 display_slide">
+                        <a href="http://www.aicpa.org/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/AICPA.png" alt="AICPA">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12 display_slide">
+                        <a href="http://www.baldrigepe.org/alliance/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/baldrigeAlliance.png" alt="The Alliance for Performance Excellence">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12 display_slide">
+                        <a href="http://www.businessweek.com/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/BBW.png" alt="Bloomberg Businessweek">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://www.campuslabs.com/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/CampusLabs.png" alt="Campus Labs">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://www.capsim.com/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/capsim.png" alt="Capsim">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://www.carringtoncrisp.com/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/carringtoncrisp.png" alt="CarringtonCrisp">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://www.cengage.com/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/cengage.png" alt="Cengage Learning">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://www.ceeman.org/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/ceeman.png" alt="CEEMAN">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://cheainternational.org/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/ciqg.jpg" alt="CHEA International Quality Group">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://management.org.tw/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/chinesemanagementassociation.png" alt="Chinese Management Association">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://eduvantis.com/" target="_blank" rel="noopener" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/images/eduvantis.jpg" alt="Eduvantis"/>
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://www.ets.org/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/ETS.png" alt="ETS">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://enactus.org/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/enactus.png" alt="Enactus">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://www.financialanalyst.org/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/GAFM.jpg" alt="Global Academy of Financial Management International Board of Standards">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://www.imanet.org/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/IMA.png" alt="Institute of Management Accountants">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="https://www.interpretive.com/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/interpretivesimulations.png" alt="Interpretive Simulations">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://keystoneacademic.com/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/keystone.png" alt="Keystone Academic Solutions">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://www.cladea.org/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/CLADEA.png" alt="Latin American Council of Management Schools">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="https://www.midstatesgroup.com/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/MidstatesGroup.png" alt="Midstates Group">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="www.mycos.com.cn/En" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/mycsos-logo-web.jpg" alt="MyCOS">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://www.planningshop.com/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/planningshop.png" alt="PlanningShop">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://www.pmiteach.org/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/PMI.png" alt="Project Management Institute">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://skyfactor.com/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/skyfactor.png" alt="Skyfactor">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://www.unprme.org/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/PRME.jpg" alt="PRME - Principles for Responsible Management Education">
+                        </a>
+                    </li>
+                    <li class="col-lg-6 col-md-12 col-sm-12">
+                        <a href="http://www.worldstrides.org/" target="_blank" rel="noopener">
+                            <img src="https://www.acbsp.org/resource/resmgr/corpmem_carousel/worldstrides.png" alt="Worldstrides">
+                        </a>
+                    </li>
+                    <div class="clear">
+                    </div>
+                </ul>  
+            </div><!-- /.slider -->
+        </div><!-- /#sponsors -->
+    </div><!-- /.row -->
+</div><!-- /.container -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     console.log("test");
     var number_of_slides = 0;
-    var number_of_slides_to_show = 3;
+    var number_of_slides_to_show = 2;
     var current_slide = 1;
-    var pause_duration = 3000;
-/*
+    var pause_duration = 5000;
     $(document).ready(function(){
-        $(.bxslider li).each(function(){
+        $(".cor_part_slider li").each(function(){
             number_of_slides += 1;
         });
+        console.log("total slides = " + number_of_slides);
         advance_slide();
     });
     function advance_slide(){ 
         $(".display_slide").removeClass("display_slide");
-        if(current_slide >= (number_of_slides - number_of_slides_to_show)){
-            current_slide = 0;
+        // if  carousel reaches end, reset to beginning
+        if(current_slide >= (number_of_slides + number_of_slides_to_show)){
+            console.log("reset");
+            current_slide = 1;
+            advance_slide();
+        // if  carousel does not have enough items on the last slide
+        }else if(current_slide > number_of_slides - number_of_slides_to_show){
+            console.log("advance partial");
+            var slides_left = number_of_slides - current_slide + 1;
+            console.log("slides left = " + slides_left);
+            for(i=0; i < slides_left; i ++){
+                $("li:nth-child(" + (current_slide + i) + ")").addClass("display_slide");
+                console.log(current_slide + i);
+            }
+            current_slide += number_of_slides_to_show;
+            $(".display_slide").css("opacity","1");
+            var pause_carousel = setTimeout(advance_slide, pause_duration);
+        // if  there are enough slides, display normal state
+        }else{
+            console.log("advance");
+            for(i=0; i < number_of_slides_to_show; i ++){
+                $("li:nth-child(" + (current_slide + i) + ")").addClass("display_slide");
+                console.log(current_slide + i);
+            }
+            current_slide += number_of_slides_to_show;
+            var pause_carousel = setTimeout(advance_slide, pause_duration);
         }
-        for(i=0; i < number_of_slides_to_show; i ++){
-            $(li:nth-child((current_slide + i))).addClass("display_slide");
-        }
-        current_slide += 1;
-        var pause_carousel = setTimeout(advance_slide, pause_duration);
     }
-
-/*
-    $( document ).ready(function() {
-        $('.bxslider').bxSlider({
-            mode: 'horizontal',
-            ticker: false,
-            tickerHover: true,
-            auto: true,
-            autoHover: true,
-            useCSS: false,
-            responsive: false,
-            slideMargin: 15,
-            minSlides: 3,
-            maxSlides: 3,
-            moveSlides: 3,
-            slideWidth: 100,
-            shrinkItems: true,
-            speed: 1,
-            pause: 3000,
-        });
-    });
-    */
 </script>
-<!-- Begin Slider Script -->
-<!--
-<script src="//acbsp.site-ym.com/resource/resmgr/scripts/jquery.bxslider.js"></script>
--->
