@@ -191,45 +191,53 @@
 </div><!-- /.container -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-    console.log("test");
+    // initaialize  number of slides variable
     var number_of_slides = 0;
-    var number_of_slides_to_show = 2;
+    // initaialize  current slide variable
     var current_slide = 1;
-    var pause_duration = 5000;
+    // set number of slides to show at one time
+    var number_of_slides_to_show = 2;
+    // set duration that slides will be displayed in milliseconds
+    var pause_duration = 3000;
+    // on page load, do the following
     $(document).ready(function(){
+        // count the total number of slides in the list
         $(".cor_part_slider li").each(function(){
             number_of_slides += 1;
+            // start on a random slide
+            current_slide = Math.floor(Math.random() * number_of_slides);
         });
-        console.log("total slides = " + number_of_slides);
+        // advance to the next slide immediately
         advance_slide();
     });
     function advance_slide(){ 
         $(".display_slide").removeClass("display_slide");
-        // if  carousel reaches end, reset to beginning
+        // if  carousel reaches end, do the following
         if(current_slide >= (number_of_slides + number_of_slides_to_show)){
-            console.log("reset");
+            // reset current slide to the beginning
             current_slide = 1;
+            // advance to the next slide immediately
             advance_slide();
-        // if  carousel does not have enough items on the last slide
+        // if list does not have enough items to fill the last slide
         }else if(current_slide > number_of_slides - number_of_slides_to_show){
-            console.log("advance partial");
+            // determine how many slides remain in the list
             var slides_left = number_of_slides - current_slide + 1;
-            console.log("slides left = " + slides_left);
+            // only display the remaining slides
             for(i=0; i < slides_left; i ++){
                 $("li:nth-child(" + (current_slide + i) + ")").addClass("display_slide");
-                console.log(current_slide + i);
             }
+            // update current slide count
             current_slide += number_of_slides_to_show;
-            $(".display_slide").css("opacity","1");
+            // advance to the next slide after the provided pause duration
             var pause_carousel = setTimeout(advance_slide, pause_duration);
         // if  there are enough slides, display normal state
         }else{
-            console.log("advance");
             for(i=0; i < number_of_slides_to_show; i ++){
                 $("li:nth-child(" + (current_slide + i) + ")").addClass("display_slide");
-                console.log(current_slide + i);
             }
+            // update current slide count
             current_slide += number_of_slides_to_show;
+            // advance to the next slide after the provided pause duration
             var pause_carousel = setTimeout(advance_slide, pause_duration);
         }
     }
